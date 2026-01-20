@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DayDone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header>
+        <h1>✅ DayDone</h1>
+        <p id="progressText">0 of 0 tasks completed</p>
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+        <p id="celebration" class="celebration"></p>
+      </header>
+
+      <!-- Tabs -->
+      <nav class="tabs">
+        <button class="tab active" data-tab="tasks">📝 Tasks</button>
+        <button class="tab" data-tab="focus">🌞 Focus</button>
+        <button class="tab" data-tab="reflection">🌙 Reflection</button>
+      </nav>
+
+      <!-- TASKS SECTION -->
+      <section id="tasks" class="section active">
+        <div class="task-input">
+          <input
+            id="taskInput"
+            placeholder="What do you want to complete today?"
+          />
+          <button id="addTaskBtn">Add</button>
+        </div>
+        <small id="warning" class="warning"></small>
+
+        <div class="filters">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="pending">Pending</button>
+          <button data-filter="completed">Completed</button>
+        </div>
+
+        <ul id="taskList"></ul>
+      </section>
+
+      <!-- FOCUS SECTION -->
+      <section id="focus" class="section">
+        <h3>🌞 Today’s Top 3</h3>
+        <p>Select your most important tasks for today.</p>
+        <ul id="top3List"></ul>
+      </section>
+
+      <!-- REFLECTION SECTION -->
+      <section id="reflection" class="section">
+        <h3>🌙 End of Day Reflection</h3>
+        <textarea
+          id="reflectionText"
+          placeholder="How did your day go?"
+        ></textarea>
+        <button id="saveReflection">Save Reflection</button>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
