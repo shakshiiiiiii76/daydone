@@ -1,5 +1,6 @@
 # daydone
 A clean daily productivity web app built with HTML, CSS, and JavaScript.
 ## 🌐 Live Demo
-https://shakshitomar.github.io/daydone/
+https://shakshiiiiiii76.github.io/daydone/
 
+(Updated README to correct the live demo link.)
